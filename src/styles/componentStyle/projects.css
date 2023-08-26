@@ -1,0 +1,125 @@
+div.project {
+    margin-top: 70px;
+}
+
+div.project h2 {
+    font-size: 30px;
+}
+
+div.project div.cards div.card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    padding: 20px 0px;
+}
+
+div.project div.cards div.card img,
+div.project div.cards div.card div.text {
+    width: 40%;
+}
+
+div.project div.cards div.card img {
+    height: 75dvh;
+}
+
+div.project div.cards div.card div.num {
+    height: 75dvh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.project div.cards div.card div.num p {
+    font-weight: 900;
+    font-size: 20px;
+}
+
+div.project div.cards div.card div.text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+div.arrow {
+    align-self: end;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+}
+
+div.arrow img {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+div.project div.cards div.card div.text h1 {
+    font-size: 70px;
+}
+
+div.project div.cards div.card div.text p {
+    margin-top: 20px;
+    font-size: 18px;
+    width: 60%;
+}
+
+div.project div.cards #reverse div.text div {
+    margin-left: 70px;
+}
+
+div.project div.cards div.card div.text a {
+    color: #010001;
+    font-weight: 900;
+}
+
+#reverse {
+    flex-direction: row-reverse;
+}
+
+div.project div.cards #reverse div.text div.arrow {
+    left: 0px !important;
+}
+
+@media screen and (max-width: 560px) {
+
+    div.project div.cards div.card,
+    div.project div.cards #reverse {
+        flex-direction: column;
+    }
+
+    div.project div.cards div.card div.num {
+        display: none;
+    }
+
+    div.project div.cards div.card img {
+        height: 70dvh;
+    }
+
+    div.project div.cards div.card div.text,
+    div.project div.cards #reverse div.text,
+    div.project div.cards div.card div.text p {
+        width: 100%;
+    }
+
+    div.project div.cards div.card img {
+        width: 320px;
+    }
+
+    div.project div.cards #reverse div.text div {
+        margin-left: 0px;
+    }
+
+    div.project div.cards #reverse div.text div.arrow,
+    div.project div.cards div.card div.text div.arrow {
+        bottom: -30px;
+        justify-content: end;
+        display: flex;
+    }
+
+    div.project div.cards div.card div.text h1 {
+        font-size: 45px;
+    }
+}

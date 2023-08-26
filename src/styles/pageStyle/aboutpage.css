@@ -1,0 +1,50 @@
+div.aboutpage {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    margin: 50px 0px;
+}
+
+div.aboutpage p {
+    text-align: left;
+    width: 40%;
+    margin: 10px 70px 0px 0px;
+}
+
+img.aboutImg {
+    width: 100%;
+    margin-top: 20px;
+}
+
+h1.aboutHeader {
+    font-size: 200px;
+    text-align: center;
+    font-weight: 200;
+}
+
+@media screen and (max-width: 768px) {
+    img.aboutImg {
+        height: 70dvh;
+    }
+
+    h1.aboutHeader {
+        font-size: 130px;
+    }
+
+    div.aboutpage p {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    h1.aboutHeader {
+        font-size: 70px;
+        margin-top: 20px;
+    }
+
+    div.aboutpage p {
+        width: 70%;
+    }
+}

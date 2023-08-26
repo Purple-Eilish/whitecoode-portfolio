@@ -1,0 +1,158 @@
+/* Navbar */
+div.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.navbar div.name>h3,
+div.toggle div.name>h3 {
+    display: inline;
+    font-size: 25px;
+    margin-left: 15px;
+    font-weight: 500;
+}
+
+div.navbar div.name>h3 a {
+    color: #010001;
+}
+
+div.navbar div.name>img {
+    cursor: pointer;
+}
+
+div.navbar div.info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+div.navbar div.info>a {
+    font-weight: 900;
+    font-size: 15px;
+    color: #010001;
+}
+
+/* Footer */
+div.footer h1 {
+    font-size: 170px;
+    text-align: center;
+}
+
+div.curr {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 70px;
+}
+
+div.curr ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+div.curr ul li a {
+    font-weight: 600;
+    color: black;
+}
+
+div.footer p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 20px;
+}
+
+div.footer hr {
+    margin-top: 20px;
+}
+
+/* Toggle menu */
+div.toggle {
+    height: 100vh;
+    padding: 20px;
+    transform: translate(-100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #D2C7C4;
+    transition: all 0.5s 0s ease-in;
+    z-index: 10;
+}
+
+
+div.toggle.active {
+    transform: translate(0%);
+}
+
+div.toggle div.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.toggle div.pageItem div.page {
+    display: flex;
+    justify-content: center;
+    height: 85dvh;
+    flex-direction: column;
+    gap: 20px;
+}
+
+div.toggle div.page h3 {
+    text-align: center;
+    font-size: 50px;
+}
+
+div.toggle div.page h3 span {
+    font-size: 20px;
+
+}
+
+div.toggle div.page h3 a {
+    color: #010001;
+}
+
+div.toggle>p {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    div.footer h1 {
+        font-size: 100px;
+    }
+}
+
+@media screen and (max-width:560px) {
+
+    /* Navbar media  queries*/
+    div.navbar div.info {
+        display: none;
+    }
+
+    div.navbar div.name {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-direction: row-reverse;
+    }
+
+    div.navbar div.name img {
+        transform: rotate(-0.5turn);
+    }
+
+    /* Footer */
+    div.footer h1 {
+        font-size: 45px;
+    }
+
+    div.footer div.curr {
+        width: 70%;
+    }
+    div.footer p{
+        font-size: 15px;
+    }
+}

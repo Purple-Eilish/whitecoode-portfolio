@@ -1,0 +1,60 @@
+div.about {
+  margin-top: 60px;
+}
+
+div.about img {
+  width: 100%;
+}
+
+div.about div.site {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+
+div.about div.site div.view {
+  display: flex;
+  align-self: end;
+}
+
+div.about div.site div.view a {
+  font-weight: 900;
+}
+
+div.about div.site div.view img {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+div.about div.site p {
+  font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+  div.welcome div.scroll {
+    margin-top: 10px !important;
+  }
+
+  div.project div.cards div.card div.text h1 {
+    font-size: 42px !important;
+  }
+
+  div.project div.cards div.card div.text p {
+    width: 80% !important;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  div.about img {
+    height: 50dvh;
+  }
+
+  div.about div.site {
+    flex-direction: column;
+  }
+
+  div.about div.site div.view {
+    margin-top: 30px;
+  }
+}
